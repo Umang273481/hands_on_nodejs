@@ -10,7 +10,7 @@ require('net').createServer(function(socket) {
         });
         socket.write('Some string');
         
-        var port = 8080;
+        var port = 4001;
         var host = '127.0.0.1';
         var server = require('http').createServer();
         server.listen(port,host, function() {
@@ -25,4 +25,4 @@ require('net').createServer(function(socket) {
         //server.on('close', function() {
         //    console.log('server closed!');
         //})
-    }).listen(8081);
+    }).listen(4000);
